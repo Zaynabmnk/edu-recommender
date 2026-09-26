@@ -1,0 +1,36 @@
+method,fold,setting
+Item-kNN CF,0,decay=0.2
+Item-kNN CF,1,decay=0.4
+Item-kNN CF,2,decay=0.2
+Item-kNN CF,3,decay=0.2
+Item-kNN CF,4,decay=0.2
+Content (TF-IDF),0,decay=0.2
+Content (TF-IDF),1,decay=0.2
+Content (TF-IDF),2,decay=0.2
+Content (TF-IDF),3,decay=0.2
+Content (TF-IDF),4,decay=0.2
+Learning path (Markov),0,decay=0.5
+Learning path (Markov),1,decay=0.5
+Learning path (Markov),2,decay=0.5
+Learning path (Markov),3,decay=0.5
+Learning path (Markov),4,decay=0.5
+ALS matrix factorisation,0,f=64 reg=30.0 alpha=20.0
+ALS matrix factorisation,1,f=64 reg=30.0 alpha=20.0
+ALS matrix factorisation,2,f=64 reg=30.0 alpha=20.0
+ALS matrix factorisation,3,f=64 reg=30.0 alpha=20.0
+ALS matrix factorisation,4,f=64 reg=30.0 alpha=20.0
+collaborative decay,0,0.2
+collaborative decay,1,0.4
+collaborative decay,2,0.2
+collaborative decay,3,0.2
+collaborative decay,4,0.2
+content decay,0,0.2
+content decay,1,0.2
+content decay,2,0.2
+content decay,3,0.2
+content decay,4,0.2
+pathway decay,0,0.5
+pathway decay,1,0.5
+pathway decay,2,0.5
+pathway decay,3,0.5
+pathway decay,4,0.5

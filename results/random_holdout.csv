@@ -1,0 +1,3 @@
+method,hold_out,learners,hr@10,ndcg@10
+Prototype hybrid (June),random video,1898,0.3946259220231823,0.2507825525155258
+Popularity,random video,1898,0.2465753424657534,0.13343936149342525

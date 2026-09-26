@@ -1,0 +1,47 @@
+method,setting,validation_ndcg@10
+Item-kNN CF,decay=1.0,0.25817482650134677
+Item-kNN CF,decay=0.8,0.2792328462341609
+Item-kNN CF,decay=0.6,0.29242582297804465
+Item-kNN CF,decay=0.4,0.29912549750298173
+Item-kNN CF,decay=0.2,0.30105701405002394
+Content (TF-IDF),decay=1.0,0.12940809860865823
+Content (TF-IDF),decay=0.8,0.1507548170981428
+Content (TF-IDF),decay=0.6,0.16275494975993776
+Content (TF-IDF),decay=0.4,0.1673754048516199
+Content (TF-IDF),decay=0.2,0.1681645536721936
+Learning path (Markov),decay=0.5,0.33872603926008066
+Learning path (Markov),decay=0.2,0.3346632334828562
+Learning path (Markov),decay=0.05,0.3327417581815124
+ALS matrix factorisation,f=32 reg=0.1 alpha=5.0,0.24307761959597313
+ALS matrix factorisation,f=32 reg=0.1 alpha=20.0,0.23278080549177735
+ALS matrix factorisation,f=32 reg=1.0 alpha=5.0,0.2439123252020154
+ALS matrix factorisation,f=32 reg=1.0 alpha=20.0,0.23331524994623043
+ALS matrix factorisation,f=32 reg=10.0 alpha=5.0,0.24697716565649105
+ALS matrix factorisation,f=32 reg=10.0 alpha=20.0,0.23752223040100945
+ALS matrix factorisation,f=32 reg=30.0 alpha=5.0,0.2515718302038196
+ALS matrix factorisation,f=32 reg=30.0 alpha=20.0,0.246576734505641
+ALS matrix factorisation,f=32 reg=100.0 alpha=5.0,0.0861902206982785
+ALS matrix factorisation,f=32 reg=100.0 alpha=20.0,0.2239416191634969
+ALS matrix factorisation,f=64 reg=0.1 alpha=5.0,0.2417189396513183
+ALS matrix factorisation,f=64 reg=0.1 alpha=20.0,0.2422183704064399
+ALS matrix factorisation,f=64 reg=1.0 alpha=5.0,0.2446867541172988
+ALS matrix factorisation,f=64 reg=1.0 alpha=20.0,0.24665593155795806
+ALS matrix factorisation,f=64 reg=10.0 alpha=5.0,0.25887308425889144
+ALS matrix factorisation,f=64 reg=10.0 alpha=20.0,0.2624775713430599
+ALS matrix factorisation,f=64 reg=30.0 alpha=5.0,0.25911926070659164
+ALS matrix factorisation,f=64 reg=30.0 alpha=20.0,0.26952451076001555
+ALS matrix factorisation,f=64 reg=100.0 alpha=5.0,0.08825074812986858
+ALS matrix factorisation,f=64 reg=100.0 alpha=20.0,0.22828745012964421
+collaborative signal decay,decay=1.0,0.25817482650134677
+collaborative signal decay,decay=0.8,0.2792328462341609
+collaborative signal decay,decay=0.6,0.29242582297804465
+collaborative signal decay,decay=0.4,0.29912549750298173
+collaborative signal decay,decay=0.2,0.30105701405002394
+content signal decay,decay=1.0,0.12940809860865823
+content signal decay,decay=0.8,0.1507548170981428
+content signal decay,decay=0.6,0.16275494975993776
+content signal decay,decay=0.4,0.1673754048516199
+content signal decay,decay=0.2,0.1681645536721936
+pathway signal decay,decay=0.5,0.3390094209026598
+pathway signal decay,decay=0.2,0.3349019926662978
+pathway signal decay,decay=0.05,0.3329795659746232

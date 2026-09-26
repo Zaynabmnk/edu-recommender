@@ -1,0 +1,417 @@
+{
+  "success": {
+    "picked_because": "real next video ranked first by the final model and missed by the prototype, 2-4 earlier videos",
+    "learner": 205297,
+    "videos_before": 4,
+    "recent_history": [
+      "Creating a Report [Power BI]",
+      "Creating and configuring a Dashboard [Power BI]",
+      "Sort, filter, summarize and calculate your PivoteTable data [Excel]"
+    ],
+    "real_next_video": "Use slicers, timelines and PivotCharts to analyze your pivotetable data [Excel]",
+    "final_model": [
+      {
+        "video": "Use slicers, timelines and PivotCharts to analyze your pivotetable data [Excel]",
+        "reason": "Often opened next after “Sort, filter, summarize and calculate your PivoteTable data”",
+        "is_real_next": true
+      },
+      {
+        "video": "Manipulating tiles in a Dashboard [Power BI]",
+        "reason": "Often opened next after “Creating and configuring a Dashboard”",
+        "is_real_next": false
+      },
+      {
+        "video": "Create a PivotTable report manually [Excel]",
+        "reason": "Learners who opened “Sort, filter, summarize and calculate your PivoteTable data” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "Customising your Visuals [Power BI]",
+        "reason": "Learners who opened “Sort, filter, summarize and calculate your PivoteTable data” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "Create a PivotTable and analyze your data [Excel]",
+        "reason": "Learners who opened “Sort, filter, summarize and calculate your PivoteTable data” also opened this",
+        "is_real_next": false
+      }
+    ],
+    "june_prototype": [
+      {
+        "video": "Creating your Datasets [Power BI]",
+        "is_real_next": false
+      },
+      {
+        "video": "Customising your Visuals [Power BI]",
+        "is_real_next": false
+      },
+      {
+        "video": "Introduction to Power BI Building Blocks [Power BI]",
+        "is_real_next": false
+      },
+      {
+        "video": "Consulting and using a Dashboard [Power BI]",
+        "is_real_next": false
+      },
+      {
+        "video": "Introduction to Power BI Desktop [Power BI]",
+        "is_real_next": false
+      }
+    ]
+  },
+  "same_topic_miss": {
+    "picked_because": "missed by the final model although the next video is about the same software",
+    "learner": 479057,
+    "videos_before": 4,
+    "recent_history": [
+      "Word 2016 - Introduction to word processing [-]",
+      "Introduction to Word [Word]",
+      "Use dictate to type in Word [Word]"
+    ],
+    "real_next_video": "A closer look at the ribbon [Word]",
+    "final_model": [
+      {
+        "video": "Dictate email messages in Outlook [Outlook]",
+        "reason": "Often opened next after “Use dictate to type in Word”",
+        "is_real_next": false
+      },
+      {
+        "video": "Chat with co-authors while editing [Word]",
+        "reason": "Often opened next after “Use dictate to type in Word”",
+        "is_real_next": false
+      },
+      {
+        "video": "Edit document with natural gestures [Word]",
+        "reason": "Learners who opened “Use dictate to type in Word” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "3D Models [Word]",
+        "reason": "Learners who opened “Use dictate to type in Word” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "How to search a file in all channels [Microsoft Teams]",
+        "reason": "Often opened next after “Use dictate to type in Word”",
+        "is_real_next": false
+      }
+    ],
+    "june_prototype": [
+      {
+        "video": "Let Word read your documents out loud [Word]",
+        "is_real_next": false
+      },
+      {
+        "video": "Let Cortana to work for you [Windows 10]",
+        "is_real_next": false
+      },
+      {
+        "video": "Dictate email messages in Outlook [Outlook]",
+        "is_real_next": false
+      },
+      {
+        "video": "Run effective meetings with Teams [-]",
+        "is_real_next": false
+      },
+      {
+        "video": "Scan documents [OneDrive]",
+        "is_real_next": false
+      }
+    ]
+  },
+  "topic_jump": {
+    "picked_because": "missed by the final model, and the next video is about different software",
+    "learner": 336301,
+    "videos_before": 3,
+    "recent_history": [
+      "Organize your next team meeting [-]",
+      "One location for your documents [Delve]",
+      "Blur my background while video conferencing with Teams [Microsoft Teams]"
+    ],
+    "real_next_video": "Grammar Tools [Microsoft Edge Chromium]",
+    "final_model": [
+      {
+        "video": "Disable the sound of a chat [Microsoft Teams]",
+        "reason": "Often opened next after “Blur my background while video conferencing with Teams”",
+        "is_real_next": false
+      },
+      {
+        "video": "Schedule a meeting for a large group [Microsoft Teams]",
+        "reason": "Learners who opened “Blur my background while video conferencing with Teams” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "Making Phone Calls [Microsoft Teams]",
+        "reason": "Often opened next after “Blur my background while video conferencing with Teams”",
+        "is_real_next": false
+      },
+      {
+        "video": "Use a Wiki tab in Teams to take notes [Microsoft Teams]",
+        "reason": "Learners who opened “Blur my background while video conferencing with Teams” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "Collaborating on a document without confusing the different versions [-]",
+        "reason": "Often opened next after “One location for your documents”",
+        "is_real_next": false
+      }
+    ],
+    "june_prototype": [
+      {
+        "video": "Getting an overall view of activity on project files and documents [Delve]",
+        "is_real_next": false
+      },
+      {
+        "video": "Including a remote participant in a meeting [Skype for Business]",
+        "is_real_next": false
+      },
+      {
+        "video": "Manage your team meetings in Teams [Microsoft Teams]",
+        "is_real_next": false
+      },
+      {
+        "video": "Schedule a meeting for a large group [Microsoft Teams]",
+        "is_real_next": false
+      },
+      {
+        "video": "Disable the sound of a chat [Microsoft Teams]",
+        "is_real_next": false
+      }
+    ]
+  },
+  "brand_new_video": {
+    "picked_because": "the first test case whose video never appears in the training data",
+    "learner": 4446,
+    "videos_before": 3,
+    "recent_history": [
+      "Introduction to Windows 10 [Windows 10]",
+      "Organizing a team’s tasks [Planner]",
+      "Personalising and configuring the Start Menu [Windows 10]"
+    ],
+    "real_next_video": "Task Manager [Windows 10]",
+    "final_model": [
+      {
+        "video": "Personalising the Taskbar [Windows 10]",
+        "reason": "Often opened next after “Personalising and configuring the Start Menu”",
+        "is_real_next": false
+      },
+      {
+        "video": "Notification and quick action management [Windows 10]",
+        "reason": "Often opened next after “Personalising and configuring the Start Menu”",
+        "is_real_next": false
+      },
+      {
+        "video": "Master Selection methods [Windows 10]",
+        "reason": "Often opened next after “Personalising and configuring the Start Menu”",
+        "is_real_next": false
+      },
+      {
+        "video": "Introduction to the File Explorer [Windows 10]",
+        "reason": "Learners who opened “Personalising and configuring the Start Menu” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "The Quick Access panel [Windows 10]",
+        "reason": "Learners who opened “Personalising and configuring the Start Menu” also opened this",
+        "is_real_next": false
+      }
+    ],
+    "june_prototype": [
+      {
+        "video": "Introduction to the Start Menu [Windows 10]",
+        "is_real_next": false
+      },
+      {
+        "video": "Multitask with windows anchoring [Windows 10]",
+        "is_real_next": false
+      },
+      {
+        "video": "What’s new in Windows 10 [Windows 10]",
+        "is_real_next": false
+      },
+      {
+        "video": "Getting help and first steps with Cortana [Windows 10]",
+        "is_real_next": false
+      },
+      {
+        "video": "Introduction to the File Explorer [Windows 10]",
+        "is_real_next": false
+      }
+    ]
+  },
+  "heaviest_learner": {
+    "picked_because": "the learner with the longest history",
+    "learner": 111316,
+    "videos_before": 185,
+    "recent_history": [
+      "Use landscape and portrait orientation [Word]",
+      "Design considerations for orientation [Word]",
+      "Insert and customize a footnote [Word]"
+    ],
+    "real_next_video": "Simpler sharing [PowerPoint]",
+    "final_model": [
+      {
+        "video": "Office 2016 - new features and enhancements [-]",
+        "reason": "Often opened next after “Custom margin - Default margin”",
+        "is_real_next": false
+      },
+      {
+        "video": "Do things quickly with Tell Me [Word]",
+        "reason": "Often opened next after “Custom margin - Default margin”",
+        "is_real_next": false
+      },
+      {
+        "video": "Change footnote font, size, and formatting [Word]",
+        "reason": "Covers similar material to “Insert and customize a footnote”",
+        "is_real_next": false
+      },
+      {
+        "video": "Copy & Paste [Word]",
+        "reason": "Learners who opened “Custom margin - Default margin” also opened this",
+        "is_real_next": false
+      },
+      {
+        "video": "Do things quickly with Tell Me [PowerPoint]",
+        "reason": "Learners who opened “Custom margin - Default margin” also opened this",
+        "is_real_next": false
+      }
+    ],
+    "june_prototype": [
+      {
+        "video": "Schedule a meeting [Outlook]",
+        "is_real_next": false
+      },
+      {
+        "video": "Manage recurring appointments [Outlook]",
+        "is_real_next": false
+      },
+      {
+        "video": "Create an appointment [Outlook]",
+        "is_real_next": false
+      },
+      {
+        "video": "Manage attachments [Outlook]",
+        "is_real_next": false
+      },
+      {
+        "video": "Groups - Be more efficient with group working [-]",
+        "is_real_next": false
+      }
+    ]
+  },
+  "feature_example": {
+    "video": "What is OneDrive for Business? [OneDrive]",
+    "text_start": "What is OneDrive for Business?. OneDrive. Discover. . Beginner. tutorial. onedrive for business is an online library to store and organize all your professional documents. as a part of office",
+    "top_tfidf_terms": [
+      {
+        "term": "onedrive",
+        "weight": 0.346
+      },
+      {
+        "term": "business",
+        "weight": 0.267
+      },
+      {
+        "term": "addressbook",
+        "weight": 0.237
+      },
+      {
+        "term": "organization",
+        "weight": 0.218
+      },
+      {
+        "term": "functionalities",
+        "weight": 0.185
+      },
+      {
+        "term": "365",
+        "weight": 0.179
+      },
+      {
+        "term": "professional",
+        "weight": 0.176
+      },
+      {
+        "term": "documents",
+        "weight": 0.174
+      }
+    ],
+    "content_neighbours": [
+      {
+        "video": "Work anywhere with OneDrive [Windows 10]",
+        "cosine": 0.314
+      },
+      {
+        "video": "Using Files in a Synchronized Library [SharePoint (Modern Sites)]",
+        "cosine": 0.307
+      },
+      {
+        "video": "Importing and Creating Documents [Office 365 portal]",
+        "cosine": 0.295
+      },
+      {
+        "video": "Accessing Your Recent Documents [Office 365 portal]",
+        "cosine": 0.292
+      },
+      {
+        "video": "Accessing Your Office Online Applications [Office 365 portal]",
+        "cosine": 0.287
+      }
+    ],
+    "item_knn_neighbours": [
+      {
+        "video": "Add, restore, delete documents on OneDrive [OneDrive]",
+        "cosine": 0.473
+      },
+      {
+        "video": "Share documents [OneDrive]",
+        "cosine": 0.465
+      },
+      {
+        "video": "Sync OneDrive for Business to your computer (Windows 10 - 1709) [OneDrive]",
+        "cosine": 0.344
+      },
+      {
+        "video": "Recycle bin [OneDrive]",
+        "cosine": 0.322
+      },
+      {
+        "video": "Work with documents in a synced library folder (Windows 10 - 1709) [OneDrive]",
+        "cosine": 0.317
+      }
+    ],
+    "opened_next": [
+      {
+        "video": "Add, restore, delete documents on OneDrive [OneDrive]",
+        "probability": 0.261
+      },
+      {
+        "video": "Share documents [OneDrive]",
+        "probability": 0.146
+      },
+      {
+        "video": "Sync OneDrive for Business to your computer (Windows 10 - 1709) [OneDrive]",
+        "probability": 0.045
+      },
+      {
+        "video": "Organize your next team meeting [-]",
+        "probability": 0.022
+      },
+      {
+        "video": "How to communicate: who can help me? [-]",
+        "probability": 0.019
+      }
+    ]
+  },
+  "miss_analysis": {
+    "misses": 1063,
+    "hits": 835,
+    "share_of_misses_with_same_software_as_last_video": 0.16839134524929444,
+    "share_of_hits_with_same_software_as_last_video": 0.5700598802395209
+  },
+  "timing": {
+    "fit_seconds_on_training_split": 0.11,
+    "recommend_and_explain_ms_mean": 0.2,
+    "recommend_and_explain_ms_p95": 0.26
+  }
+}

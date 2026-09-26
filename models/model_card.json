@@ -1,0 +1,46 @@
+{
+  "model": "Pathway hybrid (adaptive)",
+  "trained_on": {
+    "learners": 3007,
+    "videos": 1167,
+    "learner_video_pairs": 14984,
+    "last_activity": "2021-09-22 17:11:09"
+  },
+  "content_text": "TF-IDF over the title, tags and first 300 words of the cleaned subtitles",
+  "history_decays": {
+    "collaborative": 0.2,
+    "content": 0.2,
+    "pathway": 0.5
+  },
+  "weights_by_history_group": {
+    "1": {
+      "collaborative": 0.2,
+      "content": 0.3,
+      "pathway": 0.5
+    },
+    "2-4": {
+      "collaborative": 0.3,
+      "content": 0.1,
+      "pathway": 0.6
+    },
+    "5-19": {
+      "collaborative": 0.3,
+      "content": 0.2,
+      "pathway": 0.5
+    },
+    "20+": {
+      "collaborative": 0.3,
+      "content": 0.4,
+      "pathway": 0.3
+    }
+  },
+  "single_weight_mix": {
+    "collaborative": 0.2,
+    "content": 0.2,
+    "pathway": 0.6
+  },
+  "new_learner_fallback": "trending over the last 30 days of activity",
+  "seed": 42,
+  "fit_seconds": 1.35,
+  "file_megabytes": 9.23
+}

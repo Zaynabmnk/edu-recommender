@@ -1,0 +1,11 @@
+group,compared_with,only_final_hit,only_other_hit,mcnemar_p
+newcomer,Content (TF-IDF),114,89,0.0918453003837809
+newcomer,Item-kNN CF,46,22,0.004903382516355935
+newcomer,Learning path (Markov),0,0,1.0
+newcomer,Popularity,94,31,1.4560516882128633e-08
+newcomer,Prototype hybrid (June),54,78,0.04488539312889576
+returning,Content (TF-IDF),6,1,0.125
+returning,Item-kNN CF,4,4,1.0
+returning,Learning path (Markov),1,5,0.21875
+returning,Popularity,7,11,0.480682373046875
+returning,Prototype hybrid (June),4,3,1.0

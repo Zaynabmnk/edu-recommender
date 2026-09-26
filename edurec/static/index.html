@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next video recommender</title>
+<style>
+  :root {
+    --bg: #f4f3ef; --panel: #ffffff; --panel-2: #f8f7f4; --ink: #111111; --ink-2: #4d4c48; --muted: #8a8983;
+    --line: #e4e2dc; --accent: #2a78d6; --accent-soft: #e6effb; --danger: #b3261e;
+    --pathway: #1baf7a; --collaborative: #eda100; --content: #e87ba4; --trending: #2a78d6; --popularity: #b9b8b0;
+    --shadow: 0 1px 2px rgba(17, 17, 17, 0.04), 0 6px 18px rgba(17, 17, 17, 0.06);
+    --radius: 14px;
+    --button: #2466c2; --violet: #5b3fd6; --violet-soft: #efeaff; --teal: #0b6e5b; --teal-soft: #e2f6f1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0d0f; --panel: #1c1d21; --panel-2: #26272c; --ink: #f5f5f3; --ink-2: #d9d8d3; --muted: #aaa9a3;
+      --line: #3a3b41; --accent: #5ea0ec; --accent-soft: #1d2c40; --danger: #f2877e; --shadow: none;
+      --button: #2f73d6; --violet: #c4b5ff; --violet-soft: #2a2445; --teal: #6ee6c8; --teal-soft: #173a33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.45;
+         font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  svg { flex: none; }
+
+  header { color: #fff; padding: 26px 36px;
+           background: radial-gradient(900px 260px at 8% -40%, rgba(42, 120, 214, 0.6), transparent 60%),
+                       radial-gradient(700px 240px at 92% -50%, rgba(27, 175, 122, 0.45), transparent 60%), #0e1624; }
+  .brand { display: flex; align-items: center; gap: 14px; max-width: 1400px; margin: 0 auto; flex-wrap: wrap; }
+  .logo { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center;
+          background: linear-gradient(135deg, #2a78d6, #1baf7a); }
+  header h1 { margin: 0; font-size: 22px; letter-spacing: -0.01em; }
+  header p { margin: 2px 0 0; color: rgba(255, 255, 255, 0.72); font-size: 14px; }
+  .pill { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; padding: 6px 12px;
+          border-radius: 999px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18); }
+  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: #3ddc97; box-shadow: 0 0 0 3px rgba(61, 220, 151, 0.25); }
+
+  main { display: grid; grid-template-columns: minmax(320px, 400px) minmax(0, 1fr); gap: 24px; padding: 24px 36px 32px;
+         max-width: 1400px; margin: 0 auto; }
+  aside { position: sticky; top: 16px; align-self: start; display: grid; gap: 16px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+           padding: 18px 20px; }
+  .panel h2 { margin: 0 0 12px; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+
+  input { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: var(--panel-2); border: 1px solid var(--line);
+          border-radius: 10px; padding: 10px 12px; outline: none; transition: border-color 0.15s, box-shadow 0.15s; }
+  input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  input::placeholder { color: var(--muted); }
+  button { font: inherit; font-size: 14px; cursor: pointer; border-radius: 10px; border: 1px solid transparent; padding: 9px 14px;
+           display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s, border-color 0.15s, filter 0.15s; }
+  button:active { transform: translateY(1px); }
+  .primary { background: var(--button); color: #fff; }
+  .primary:hover { filter: brightness(1.08); }
+  .ghost { background: transparent; color: var(--ink-2); border-color: var(--line); }
+  .ghost:hover { background: var(--panel-2); }
+  .violet { background: var(--violet-soft); color: var(--violet); font-weight: 600; }
+  .teal { background: var(--teal-soft); color: var(--teal); font-weight: 600; }
+  .violet:hover, .teal:hover { filter: brightness(1.06); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .link { background: none; border: none; padding: 0; color: inherit; text-align: left; font-size: inherit; display: inline; }
+  .link:hover { color: var(--accent); text-decoration: underline; }
+  .icon { padding: 5px; border-radius: 8px; color: var(--muted); background: transparent; }
+  .icon:hover { background: var(--panel-2); color: var(--danger); }
+  .row { display: flex; gap: 8px; }
+  .row input { width: 0; }
+  .search { position: relative; }
+  .search input { padding-left: 36px; width: 100%; }
+  .search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .examples { margin-top: 8px; }
+  .examples button { flex: 1; justify-content: center; padding: 7px 10px; font-size: 13px; }
+
+  .results { margin-top: 8px; max-height: 330px; overflow: auto; }
+  .results li { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 8px 6px; border-radius: 10px; }
+  .results li:hover { background: var(--panel-2); }
+  .results .text { flex: 1; min-width: 0; }
+  .results .add { padding: 5px 10px; font-size: 13px; }
+
+  .timeline li { position: relative; padding: 0 0 14px 36px; }
+  .timeline li::before { content: ""; position: absolute; left: 11px; top: 26px; bottom: 0; width: 2px; background: var(--line); }
+  .timeline li:last-child { padding-bottom: 2px; }
+  .timeline li:last-child::before { display: none; }
+  .step { position: absolute; left: 0; top: 0; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+          font-size: 11px; font-weight: 700; color: var(--muted); background: var(--panel-2); border: 1px solid var(--line); }
+  .timeline li.latest .step { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 0 0 4px var(--accent-soft); }
+  .timeline .line { display: flex; align-items: flex-start; gap: 6px; }
+  .timeline .text { flex: 1; min-width: 0; padding-top: 2px; }
+  .timeline .earlier { padding-left: 36px; padding-bottom: 12px; font-size: 13px; color: var(--muted); }
+  .timeline .earlier::before { display: none; }
+  .empty { color: var(--muted); font-size: 14px; }
+  .sub { display: block; font-size: 12px; color: var(--muted); }
+
+  .summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 2px 0 12px; }
+  .summary h2 { margin: 0; font-size: 22px; letter-spacing: -0.01em; }
+  .status { color: var(--muted); font-size: 14px; }
+  .status.error { color: var(--danger); }
+  .weights .bar { display: flex; height: 28px; border-radius: 10px; overflow: hidden; gap: 3px; }
+  .weights .seg { display: flex; align-items: center; padding: 0 10px; font-size: 12px; font-weight: 650; color: #0b0b0b;
+                  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; transition: flex-grow 0.4s ease; }
+  .weights .caption { font-size: 13px; color: var(--muted); margin: 7px 0 18px; }
+
+  .cards { display: grid; gap: 14px; }
+  .card { display: grid; grid-template-columns: auto 1fr; gap: 16px; padding: 16px 18px; background: var(--panel);
+          border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); animation: rise 0.35s ease both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .tile { position: relative; width: 48px; height: 48px; border-radius: 13px; display: grid; place-items: center;
+          font-weight: 750; font-size: 16px; color: #1b1b1b; }
+  .tile .rank { position: absolute; top: -7px; left: -7px; width: 22px; height: 22px; border-radius: 50%; display: grid;
+                place-items: center; font-size: 11px; font-weight: 750; background: var(--ink); color: var(--panel); }
+  .card .title { font-size: 16px; font-weight: 650; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .tag { font-size: 12px; color: var(--ink-2); background: var(--panel-2); border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; }
+  .reason { margin-top: 10px; color: var(--ink-2); }
+  .chip { display: inline-block; font-size: 12px; font-weight: 650; padding: 1px 9px; border-radius: 999px; color: #0b0b0b; margin-right: 8px; }
+  .why { margin-top: 10px; }
+  .why .bar { display: flex; height: 6px; border-radius: 999px; overflow: hidden; gap: 2px; max-width: 360px; }
+  .why .legend { font-size: 12px; color: var(--muted); margin-top: 5px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .actions button { padding: 7px 12px; font-size: 13px; }
+  .actions .ghost svg { transition: transform 0.2s; }
+  .actions .ghost.open svg { transform: rotate(180deg); }
+
+  .details { flex-basis: 100%; margin-top: 10px; padding: 12px 14px; border-radius: 12px; background: var(--panel-2);
+             border: 1px solid var(--line); font-size: 14px; animation: rise 0.25s ease both; }
+  .details p { margin: 8px 0 4px; color: var(--ink-2); line-height: 1.5; }
+  .details p.full { max-height: 260px; overflow: auto; padding-right: 6px; }
+  footer { max-width: 1400px; margin: 0 auto; padding: 0 36px 28px; font-size: 12px; color: var(--muted); }
+
+  @media (max-width: 900px) {
+    header { padding: 20px 16px; }
+    main { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+    aside { position: static; }
+    footer { padding: 0 16px 20px; }
+    .pill { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="18" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="19" cy="15" r="2"/><path d="M6.2 16.4 10.8 8.6M13.6 8.3l4.1 5.2"/></svg></div>
+    <div>
+      <h1>Next video recommender</h1>
+      <p>Pathway-aware hybrid recommender for the Mandarine Academy Microsoft 365 MOOC (MARS dataset)</p>
+    </div>
+    <div class="pill" id="health"><span class="dot"></span><span>Connecting…</span></div>
+  </div>
+</header>
+
+<main>
+  <aside>
+    <section class="panel">
+      <h2>Learning path so far</h2>
+      <ul class="timeline" id="history"></ul>
+    </section>
+    <section class="panel">
+      <h2>Find a video</h2>
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="search" placeholder="Search titles, e.g. OneDrive, PivotTable, Teams" autocomplete="off">
+      </div>
+      <ul class="results" id="results"></ul>
+    </section>
+    <section class="panel">
+      <h2>Load a learner</h2>
+      <div class="row">
+        <input id="learner" placeholder="Learner ID, e.g. 111316" inputmode="numeric">
+        <button class="primary" id="load">Load</button>
+        <button class="ghost" id="clear">Clear</button>
+      </div>
+      <div class="row examples">
+        <button class="violet" id="heaviest"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg>Heaviest learner</button>
+        <button class="teal" id="random"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>Random learner</button>
+      </div>
+      <div class="hint" id="learner-hint">Loads a real learner's history from the MARS data. Try the heaviest learner or a random one.</div>
+    </section>
+  </aside>
+
+  <section>
+    <div class="summary"><h2>Recommended next</h2><span class="status" id="status"></span></div>
+    <div class="weights" id="weights"></div>
+    <div class="cards" id="cards"></div>
+  </section>
+</main>
+<footer>Data: MARS dataset (Hafsa, 2022), CC0. Recommendations are ranked from what the learner has opened so far; videos cannot be played here because the dataset has no video files.</footer>
+
+<script>
+  const COLOURS = {pathway: "var(--pathway)", collaborative: "var(--collaborative)", content: "var(--content)",
+                   trending: "var(--trending)", popularity: "var(--popularity)"};
+  const LABELS = {pathway: "learning path", collaborative: "collaborative", content: "content", trending: "trending",
+                  popularity: "popular"};
+  const PARTS = ["pathway", "collaborative", "content"];
+  const TILES = ["#cfe3fb", "#cdeedf", "#fbe1bf", "#f8d6e4", "#e2daf7", "#d2ecf1", "#f1e4c3", "#e2e6ea"];
+  const ICON = {
+    check: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17l9-10"/></svg>',
+    chevron: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>',
+    close: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+    plus: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+  };
+  let history = [];
+
+  async function call(url, options) {
+    const response = await fetch(url, options);
+    const body = await response.json();
+    if (!response.ok) throw new Error(body.detail || response.statusText);
+    return body;
+  }
+
+  function el(tag, attrs, ...children) {
+    const node = document.createElement(tag);
+    Object.entries(attrs || {}).forEach(([k, v]) => k === "style" ? node.setAttribute("style", v) : (node[k] = v));
+    children.forEach(c => node.append(c));
+    return node;
+  }
+
+  function duration(seconds) {
+    const pad = n => String(n).padStart(2, "0");
+    const h = Math.floor(seconds / 3600), m = Math.floor(seconds % 3600 / 60), s = seconds % 60;
+    return h ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
+  }
+
+  // A small coloured tile with the software's initials stands in for a thumbnail, since MARS has no images.
+  function initials(software) {
+    const first = (software || "").split(",")[0].trim();
+    if (!first) return "•";
+    const capitals = first.split(" ")[0].match(/[A-Z]/g) || [];
+    if (capitals.length >= 2) return capitals.slice(0, 2).join("");
+    const words = first.match(/[A-Za-z0-9]+/g) || [first];
+    return words.length > 1 ? (words[0][0] + words[1][0]).toUpperCase() : words[0].slice(0, 2);
+  }
+
+  function tile(video, rank) {
+    const name = (video.software || "").split(",")[0];
+    let hash = 0;
+    for (const c of name) hash = (hash * 31 + c.charCodeAt(0)) % 997;
+    const box = el("div", {className: "tile", style: `background:${TILES[hash % TILES.length]}`}, initials(video.software));
+    if (rank) box.append(el("span", {className: "rank"}, String(rank)));
+    return box;
+  }
+
+  // Opens (or closes) a box with a video's length, tags and the start of its subtitles.
+  // MARS has no video files, so the subtitles are the closest thing to the video itself.
+  async function toggleDetails(parent, itemId, button) {
+    const open = parent.querySelector(":scope > .details");
+    if (button) button.classList.toggle("open", !open);
+    if (open) { open.remove(); return; }
+    const box = el("div", {className: "details"}, "Loading…");
+    parent.append(box);
+    try {
+      const video = await call(`/videos/${itemId}`);
+      const facts = [duration(video.duration_seconds), video.type, video.difficulty, video.software, video.theme];
+      const words = (video.subtitles || "").split(" ").filter(Boolean);
+      const text = el("p", {}, words.length ? words.slice(0, 80).join(" ") + (words.length > 80 ? "…" : "")
+                                             : "This video has no subtitles in the dataset.");
+      box.replaceChildren(el("div", {className: "sub"}, facts.filter(Boolean).join(" · ")), text);
+      if (words.length > 80) {
+        const more = el("button", {className: "link sub", textContent: `Show all ${words.length} words`, onclick: () => {
+          text.className = "full"; text.textContent = words.join(" "); more.remove(); }});
+        box.append(more);
+      }
+    } catch (error) {
+      box.replaceChildren(el("span", {className: "status error"}, error.message));
+    }
+  }
+
+  function nameButton(video, parent, className) {
+    return el("button", {className: `link ${className || ""}`, textContent: video.name, title: "Show details",
+                         onclick: () => toggleDetails(parent, video.item_id)});
+  }
+
+  // Which dataset learner the history came from, so the page can say whose path is shown.
+  let loaded = null;
+  const hint = document.getElementById("learner-hint");
+  const HINT = hint.textContent;
+  function describeLearner(edited) {
+    hint.textContent = loaded === null ? HINT
+      : edited ? `Started from learner ${loaded}, with your changes`
+               : `Showing learner ${loaded} · ${history.length} video${history.length === 1 ? "" : "s"}`;
+  }
+
+  function watch(video) {
+    if (!history.some(v => v.item_id === video.item_id)) history.push(video);
+    describeLearner(true);
+    drawHistory();
+    recommend();
+  }
+
+  function drawHistory() {
+    const list = document.getElementById("history");
+    list.replaceChildren();
+    if (!history.length) {
+      list.append(el("li", {className: "empty"}, "Nothing yet, so a new learner sees what is trending."));
+      return;
+    }
+    const shown = 10;
+    if (history.length > shown) list.append(el("li", {className: "earlier"}, `${history.length - shown} earlier videos`));
+    history.forEach((video, i) => {
+      if (i < history.length - shown) return;
+      const row = el("li", {className: i === history.length - 1 ? "latest" : ""});
+      const remove = el("button", {className: "icon", innerHTML: ICON.close, title: "Remove", onclick: () => {
+        history.splice(i, 1); describeLearner(true); drawHistory(); recommend(); }});
+      remove.setAttribute("aria-label", `Remove ${video.name}`);
+      row.append(el("span", {className: "step"}, String(i + 1)),
+        el("div", {className: "line"},
+          el("div", {className: "text"}, nameButton(video, row), el("span", {className: "sub"}, video.software || "no software tag")),
+          remove));
+      list.append(row);
+    });
+  }
+
+  function drawWeights(result) {
+    const box = document.getElementById("weights");
+    box.replaceChildren();
+    const bar = el("div", {className: "bar"});
+    if (!result.weights) {
+      bar.append(el("div", {className: "seg", style: `flex:1;background:${COLOURS.trending};color:#fff`}, "trending over the last 30 days"));
+      box.append(bar, el("div", {className: "caption"}, "A new learner has no history yet, so the page shows what is popular right now."));
+      return;
+    }
+    PARTS.forEach(part => {
+      const w = result.weights[part];
+      if (w > 0) bar.append(el("div", {className: "seg", style: `flex:${w};background:${COLOURS[part]}`},
+                               `${LABELS[part]} ${Math.round(w * 100)}%`));
+    });
+    const group = result.history_group;
+    box.append(bar, el("div", {className: "caption"},
+      `How much each signal counts for learners with ${group} video${group === "1" ? "" : "s"} so far`));
+  }
+
+  function whyBar(shares) {
+    const total = PARTS.reduce((sum, part) => sum + (shares[part] || 0), 0);
+    if (!(total > 0)) return null;
+    const bar = el("div", {className: "bar"});
+    const parts = [];
+    PARTS.forEach(part => {
+      const share = (shares[part] || 0) / total;
+      if (share < 0.005) return;
+      bar.append(el("div", {style: `flex:${share};background:${COLOURS[part]}`}));
+      parts.push(`${LABELS[part]} ${Math.round(share * 100)}%`);
+    });
+    return el("div", {className: "why"}, bar, el("div", {className: "legend"}, "Why: " + parts.join(" · ")));
+  }
+
+  function drawCards(result) {
+    const cards = document.getElementById("cards");
+    cards.replaceChildren();
+    result.recommendations.forEach((item, i) => {
+      const ink = item.signal === "trending" ? "#ffffff" : "#0b0b0b";
+      const body = el("div");
+      const tags = [item.software || "no software tag", item.type, item.difficulty, duration(item.duration_seconds)].filter(Boolean);
+      const details = el("button", {className: "ghost", innerHTML: `<span>Details</span>${ICON.chevron}`,
+                                    onclick: () => toggleDetails(body, item.item_id, details)});
+      body.append(nameButton(item, body, "title"),
+        el("div", {className: "tags"}, ...tags.map(t => el("span", {className: "tag"}, t))),
+        el("div", {className: "reason"},
+          el("span", {className: "chip", style: `background:${COLOURS[item.signal]};color:${ink}`}, LABELS[item.signal]), item.reason));
+      const why = item.signal_shares ? whyBar(item.signal_shares) : null;
+      if (why) body.append(why);
+      body.append(el("div", {className: "actions"},
+        el("button", {className: "primary", innerHTML: `${ICON.check}<span>Mark as watched</span>`, onclick: () => watch(item)}),
+        details));
+      cards.append(el("article", {className: "card", style: `animation-delay:${i * 40}ms`}, tile(item, item.rank), body));
+    });
+  }
+
+  async function recommend() {
+    const status = document.getElementById("status");
+    try {
+      const result = await call("/recommendations", {method: "POST", headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({history: history.map(v => v.item_id), k: 8})});
+      status.className = "status";
+      status.textContent = history.length ? `${history.length} video${history.length > 1 ? "s" : ""} watched · ${result.milliseconds} ms`
+                                          : "New learner";
+      drawWeights(result);
+      drawCards(result);
+    } catch (error) {
+      status.className = "status error";
+      status.textContent = error.message;
+    }
+  }
+
+  let timer;
+  const searchBox = document.getElementById("search");
+  searchBox.addEventListener("input", () => {
+    clearTimeout(timer);
+    timer = setTimeout(async () => {
+      const list = document.getElementById("results");
+      list.replaceChildren();
+      const query = searchBox.value.trim();
+      if (query.length < 2) return;
+      const found = await call(`/videos?search=${encodeURIComponent(query)}&limit=8`);
+      if (!found.videos.length) list.append(el("li", {className: "empty"}, "No videos match."));
+      found.videos.forEach(video => {
+        const row = el("li");
+        row.append(tile(video),
+          el("div", {className: "text"}, nameButton(video, row), el("span", {className: "sub"}, video.software || "no software tag")),
+          el("button", {className: "primary add", innerHTML: `${ICON.plus}<span>Add</span>`, onclick: () => watch(video)}));
+        list.append(row);
+      });
+    }, 200);
+  });
+  searchBox.addEventListener("keydown", event => {
+    if (event.key === "Escape") { searchBox.value = ""; document.getElementById("results").replaceChildren(); }
+  });
+
+  async function loadLearner(id) {
+    const status = document.getElementById("status");
+    try {
+      history = (await call(`/learners/${encodeURIComponent(id)}/history`)).history;
+      loaded = id;
+      learnerBox.value = id;
+      describeLearner(false);
+      drawHistory();
+      recommend();
+    } catch (error) {
+      status.className = "status error";
+      status.textContent = error.message;
+    }
+  }
+  const learnerBox = document.getElementById("learner");
+  document.getElementById("load").addEventListener("click", () => loadLearner(learnerBox.value.trim()));
+  learnerBox.addEventListener("keydown", event => { if (event.key === "Enter") loadLearner(learnerBox.value.trim()); });
+  document.getElementById("clear").addEventListener("click", () => {
+    history = []; loaded = null; learnerBox.value = ""; describeLearner(); drawHistory(); recommend(); });
+  document.getElementById("heaviest").addEventListener("click", async () =>
+    loadLearner((await call("/learners/heaviest")).learner_id));
+  document.getElementById("random").addEventListener("click", async () =>
+    loadLearner((await call("/learners/random")).learner_id));
+
+  // The page can start from a history in the address, for example /?videos=510,511 or /?learner=111316
+  async function start() {
+    call("/health").then(h => {
+      document.getElementById("health").replaceChildren(el("span", {className: "dot"}),
+        `Model ready · ${h.videos.toLocaleString("en-GB")} videos · ${h.learners.toLocaleString("en-GB")} learners`);
+    }).catch(() => {});
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("learner")) return loadLearner(params.get("learner"));
+    try {
+      if (params.get("videos")) {
+        for (const id of params.get("videos").split(",")) history.push(await call(`/videos/${encodeURIComponent(id.trim())}`));
+      }
+    } catch (error) {
+      document.getElementById("status").textContent = error.message;
+    }
+    drawHistory();
+    recommend();
+  }
+  start();
+</script>
+</body>
+</html>

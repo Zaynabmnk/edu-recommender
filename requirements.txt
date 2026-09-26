@@ -1,0 +1,8 @@
+# The versions I developed and tested with, on Python 3.13.
+# The web API and demo page only use the standard library, so nothing else is needed.
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.18.0
+scikit-learn==1.9.0
+matplotlib==3.10.0
+joblib==1.5.3

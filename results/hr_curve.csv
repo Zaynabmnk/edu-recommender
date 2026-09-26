@@ -1,0 +1,801 @@
+method,k,hr
+Random,1,0.0015806111696522655
+Random,2,0.0015806111696522655
+Random,3,0.002107481559536354
+Random,4,0.0026343519494204425
+Random,5,0.003161222339304531
+Random,6,0.005268703898840885
+Random,7,0.00684931506849315
+Random,8,0.00684931506849315
+Random,9,0.007903055848261328
+Random,10,0.008429926238145416
+Random,11,0.009483667017913594
+Random,12,0.01053740779768177
+Random,13,0.011591148577449948
+Random,14,0.012118018967334035
+Random,15,0.013171759747102213
+Random,16,0.0136986301369863
+Random,17,0.01422550052687039
+Random,18,0.014752370916754479
+Random,19,0.015279241306638568
+Random,20,0.015806111696522657
+Random,21,0.01685985247629083
+Random,22,0.01791359325605901
+Random,23,0.018967334035827187
+Random,24,0.02054794520547945
+Random,25,0.02054794520547945
+Random,26,0.02107481559536354
+Random,27,0.022128556375131718
+Random,28,0.022655426765015807
+Random,29,0.02370916754478398
+Random,30,0.025816649104320338
+Random,31,0.026870389884088516
+Random,32,0.02792413066385669
+Random,33,0.02792413066385669
+Random,34,0.029504741833508957
+Random,35,0.030031612223393046
+Random,36,0.030558482613277135
+Random,37,0.0321390937829294
+Random,38,0.033192834562697573
+Random,39,0.03371970495258166
+Random,40,0.03530031612223393
+Random,41,0.03635405690200211
+Random,42,0.0368809272918862
+Random,43,0.037934668071654375
+Random,44,0.03898840885142255
+Random,45,0.03951527924130664
+Random,46,0.03951527924130664
+Random,47,0.04056902002107481
+Random,48,0.04056902002107481
+Random,49,0.04214963119072708
+Random,50,0.04320337197049526
+Popularity,1,0.02054794520547945
+Popularity,2,0.037934668071654375
+Popularity,3,0.059009483667017915
+Popularity,4,0.0821917808219178
+Popularity,5,0.10063224446786091
+Popularity,6,0.11749209694415173
+Popularity,7,0.13962065331928344
+Popularity,8,0.1517386722866175
+Popularity,9,0.16332982086406744
+Popularity,10,0.17123287671232876
+Popularity,11,0.1828240252897787
+Popularity,12,0.18703898840885141
+Popularity,13,0.19810326659641728
+Popularity,14,0.20495258166491043
+Popularity,15,0.21180189673340358
+Popularity,16,0.21891464699683877
+Popularity,17,0.22787144362486828
+Popularity,18,0.23234984193888303
+Popularity,19,0.25105374077976816
+Popularity,20,0.2602739726027397
+Popularity,21,0.2671232876712329
+Popularity,22,0.2721285563751317
+Popularity,23,0.27634351949420444
+Popularity,24,0.28477344573234986
+Popularity,25,0.2932033719704953
+Popularity,26,0.3029504741833509
+Popularity,27,0.30848261327713383
+Popularity,28,0.315595363540569
+Popularity,29,0.3192834562697576
+Popularity,30,0.32086406743940993
+Popularity,31,0.3266596417281349
+Popularity,32,0.3308746048472076
+Popularity,33,0.33737267298911133
+Popularity,34,0.3432560590094837
+Popularity,35,0.3479978925184405
+Popularity,36,0.35212504390586585
+Popularity,37,0.35634000702493857
+Popularity,38,0.36152089919213204
+Popularity,39,0.36724622409553914
+Popularity,40,0.3712328767123288
+Popularity,41,0.37636986301369857
+Popularity,42,0.3834562697576396
+Popularity,43,0.3898577449947313
+Popularity,44,0.39506498068141904
+Popularity,45,0.399402880224798
+Popularity,46,0.4043466807165437
+Popularity,47,0.4087460484720759
+Popularity,48,0.41527924130663857
+Popularity,49,0.4195205479452055
+Popularity,50,0.42518440463645946
+Prototype hybrid (June),1,0.1422550052687039
+Prototype hybrid (June),2,0.1917808219178082
+Prototype hybrid (June),3,0.22760800842992623
+Prototype hybrid (June),4,0.2581664910432034
+Prototype hybrid (June),5,0.2808219178082192
+Prototype hybrid (June),6,0.29610115911485774
+Prototype hybrid (June),7,0.3166491043203372
+Prototype hybrid (June),8,0.3361433087460485
+Prototype hybrid (June),9,0.3519494204425711
+Prototype hybrid (June),10,0.3635405690200211
+Prototype hybrid (June),11,0.37513171759747105
+Prototype hybrid (June),12,0.3835616438356164
+Prototype hybrid (June),13,0.3946259220231823
+Prototype hybrid (June),14,0.40516332982086406
+Prototype hybrid (June),15,0.41622760800842995
+Prototype hybrid (June),16,0.4220231822971549
+Prototype hybrid (June),17,0.4293993677555321
+Prototype hybrid (June),18,0.4367755532139094
+Prototype hybrid (June),19,0.44362486828240255
+Prototype hybrid (June),20,0.4488935721812434
+Prototype hybrid (June),21,0.45521601685985247
+Prototype hybrid (June),22,0.4594309799789252
+Prototype hybrid (June),23,0.46259220231822973
+Prototype hybrid (June),24,0.47102212855637515
+Prototype hybrid (June),25,0.4815595363540569
+Prototype hybrid (June),26,0.48735511064278186
+Prototype hybrid (June),27,0.4910432033719705
+Prototype hybrid (June),28,0.4994731296101159
+Prototype hybrid (June),29,0.5026343519494204
+Prototype hybrid (June),30,0.5073761854583773
+Prototype hybrid (June),31,0.5131717597471022
+Prototype hybrid (June),32,0.5173867228661749
+Prototype hybrid (June),33,0.5200210748155953
+Prototype hybrid (June),34,0.5268703898840885
+Prototype hybrid (June),35,0.5305584826132771
+Prototype hybrid (June),36,0.5363540569020021
+Prototype hybrid (June),37,0.541622760800843
+Prototype hybrid (June),38,0.5442571127502634
+Prototype hybrid (June),39,0.5474183350895679
+Prototype hybrid (June),40,0.5526870389884089
+Prototype hybrid (June),41,0.5558482613277134
+Prototype hybrid (June),42,0.5600632244467861
+Prototype hybrid (June),43,0.5669125395152792
+Prototype hybrid (June),44,0.5706006322444679
+Prototype hybrid (June),45,0.5721812434141201
+Prototype hybrid (June),46,0.5790305584826133
+Prototype hybrid (June),47,0.5811380400421496
+Prototype hybrid (June),48,0.5848261327713382
+Prototype hybrid (June),49,0.5869336143308747
+Prototype hybrid (June),50,0.5885142255005269
+Item-kNN CF (no recency),1,0.154254478398314
+Item-kNN CF (no recency),2,0.19681243414120128
+Item-kNN CF (no recency),3,0.22962328767123288
+Item-kNN CF (no recency),4,0.2530997541271514
+Item-kNN CF (no recency),5,0.2743370214260625
+Item-kNN CF (no recency),6,0.29757639620653314
+Item-kNN CF (no recency),7,0.31456859350694966
+Item-kNN CF (no recency),8,0.3318823168401672
+Item-kNN CF (no recency),9,0.34208768049653193
+Item-kNN CF (no recency),10,0.35229349952920597
+Item-kNN CF (no recency),11,0.36206164640466926
+Item-kNN CF (no recency),12,0.3766598946855764
+Item-kNN CF (no recency),13,0.3887818521340284
+Item-kNN CF (no recency),14,0.4000601897320112
+Item-kNN CF (no recency),15,0.40778215219827635
+Item-kNN CF (no recency),16,0.41603976622759037
+Item-kNN CF (no recency),17,0.4240339450619624
+Item-kNN CF (no recency),18,0.4336087350659866
+Item-kNN CF (no recency),19,0.4402857379256483
+Item-kNN CF (no recency),20,0.45094526108531624
+Item-kNN CF (no recency),21,0.4578761630242661
+Item-kNN CF (no recency),22,0.4650061048882832
+Item-kNN CF (no recency),23,0.47187261155735827
+Item-kNN CF (no recency),24,0.48137347017585375
+Item-kNN CF (no recency),25,0.4874496712601027
+Item-kNN CF (no recency),26,0.49299900195446755
+Item-kNN CF (no recency),27,0.4964013358100547
+Item-kNN CF (no recency),28,0.5024380216150623
+Item-kNN CF (no recency),29,0.5068940962504177
+Item-kNN CF (no recency),30,0.5112346291336055
+Item-kNN CF (no recency),31,0.5144628800825936
+Item-kNN CF (no recency),32,0.5195351773961758
+Item-kNN CF (no recency),33,0.5254855920262317
+Item-kNN CF (no recency),34,0.5314360066562875
+Item-kNN CF (no recency),35,0.5352130809280715
+Item-kNN CF (no recency),36,0.5416245071492759
+Item-kNN CF (no recency),37,0.5487605881437543
+Item-kNN CF (no recency),38,0.5527134938660161
+Item-kNN CF (no recency),39,0.5548223532236838
+Item-kNN CF (no recency),40,0.5585118237510036
+Item-kNN CF (no recency),41,0.5623769177416182
+Item-kNN CF (no recency),42,0.5657507343642432
+Item-kNN CF (no recency),43,0.5675444085631141
+Item-kNN CF (no recency),44,0.5704796352734006
+Item-kNN CF (no recency),45,0.5741173558368661
+Item-kNN CF (no recency),46,0.5759110300357373
+Item-kNN CF (no recency),47,0.5782315746244923
+Item-kNN CF (no recency),48,0.5805521192132476
+Item-kNN CF (no recency),49,0.5828726638020026
+Item-kNN CF (no recency),50,0.5857200787806419
+Item-kNN CF,1,0.16524098048070648
+Item-kNN CF,2,0.2196811179687892
+Item-kNN CF,3,0.2634960359275428
+Item-kNN CF,4,0.29391966481007575
+Item-kNN CF,5,0.31841600180641283
+Item-kNN CF,6,0.3402077374680115
+Item-kNN CF,7,0.35205918510713036
+Item-kNN CF,8,0.3705621301775148
+Item-kNN CF,9,0.38311583042879144
+Item-kNN CF,10,0.3938259396917831
+Item-kNN CF,11,0.40083178038028267
+Item-kNN CF,12,0.4166192503983568
+Item-kNN CF,13,0.42450366456816957
+Item-kNN CF,14,0.43383258172358125
+Item-kNN CF,15,0.4398685589422174
+Item-kNN CF,16,0.4466509358798559
+Item-kNN CF,17,0.4555407943770309
+Item-kNN CF,18,0.46074256014501713
+Item-kNN CF,19,0.46936898344725003
+Item-kNN CF,20,0.4764457879557062
+Item-kNN CF,21,0.4824283231928646
+Item-kNN CF,22,0.48850452427711355
+Item-kNN CF,23,0.49668820692089877
+Item-kNN CF,24,0.5026590339271709
+Item-kNN CF,25,0.5066277534518835
+Item-kNN CF,26,0.5121770841462483
+Item-kNN CF,27,0.5162116624696965
+Item-kNN CF,28,0.523407463132449
+Item-kNN CF,29,0.5279689118457812
+Item-kNN CF,30,0.532572879923911
+Item-kNN CF,31,0.5339570845083048
+Item-kNN CF,32,0.5390293818218871
+Item-kNN CF,33,0.5428723148924066
+Item-kNN CF,34,0.5464518127679842
+Item-kNN CF,35,0.550432240523583
+Item-kNN CF,36,0.5546761034741239
+Item-kNN CF,37,0.5596446211979388
+Item-kNN CF,38,0.5628349513558947
+Item-kNN CF,39,0.5633909295644302
+Item-kNN CF,40,0.5671081301122705
+Item-kNN CF,41,0.5710009541234052
+Item-kNN CF,42,0.5744025007665502
+Item-kNN CF,43,0.5762239049859414
+Item-kNN CF,44,0.5802406024965164
+Item-kNN CF,45,0.5849597938602701
+Item-kNN CF,46,0.5879666564569007
+Item-kNN CF,47,0.590446648663647
+Item-kNN CF,48,0.5937169464552197
+Item-kNN CF,49,0.5948797626872558
+Item-kNN CF,50,0.5988086484661834
+Content (TF-IDF),1,0.05005268703898841
+Content (TF-IDF),2,0.0874604847207587
+Content (TF-IDF),3,0.12750263435194942
+Content (TF-IDF),4,0.14436248682824027
+Content (TF-IDF),5,0.16859852476290832
+Content (TF-IDF),6,0.1880927291886196
+Content (TF-IDF),7,0.20231822971549
+Content (TF-IDF),8,0.21707060063224448
+Content (TF-IDF),9,0.23603793466807166
+Content (TF-IDF),10,0.2555321390937829
+Content (TF-IDF),11,0.2718651211801897
+Content (TF-IDF),12,0.28240252897787144
+Content (TF-IDF),13,0.28609062170706007
+Content (TF-IDF),14,0.2934668071654373
+Content (TF-IDF),15,0.3018967334035827
+Content (TF-IDF),16,0.3108535300316122
+Content (TF-IDF),17,0.3150684931506849
+Content (TF-IDF),18,0.3192834562697576
+Content (TF-IDF),19,0.3245521601685985
+Content (TF-IDF),20,0.3287671232876712
+Content (TF-IDF),21,0.3308746048472076
+Content (TF-IDF),22,0.33456269757639623
+Content (TF-IDF),23,0.33877766069546894
+Content (TF-IDF),24,0.3440463645943098
+Content (TF-IDF),25,0.3498419388830348
+Content (TF-IDF),26,0.3519494204425711
+Content (TF-IDF),27,0.35721812434141204
+Content (TF-IDF),28,0.36037934668071653
+Content (TF-IDF),29,0.3667017913593256
+Content (TF-IDF),30,0.36933614330874603
+Content (TF-IDF),31,0.37407797681770283
+Content (TF-IDF),32,0.3761854583772392
+Content (TF-IDF),33,0.38250790305584825
+Content (TF-IDF),34,0.3856691253951528
+Content (TF-IDF),35,0.38883034773445735
+Content (TF-IDF),36,0.3909378292939937
+Content (TF-IDF),37,0.39567966280295047
+Content (TF-IDF),38,0.3998946259220232
+Content (TF-IDF),39,0.4062170706006322
+Content (TF-IDF),40,0.40937829293993677
+Content (TF-IDF),41,0.41464699683877765
+Content (TF-IDF),42,0.4183350895679663
+Content (TF-IDF),43,0.42096944151738674
+Content (TF-IDF),44,0.422550052687039
+Content (TF-IDF),45,0.42360379346680715
+Content (TF-IDF),46,0.42781875658587987
+Content (TF-IDF),47,0.43256059009483666
+Content (TF-IDF),48,0.43888303477344576
+Content (TF-IDF),49,0.44151738672286617
+Content (TF-IDF),50,0.4446786090621707
+Learning path (Markov),1,0.19099051633298209
+Learning path (Markov),2,0.2513171759747102
+Learning path (Markov),3,0.2966280295047418
+Learning path (Markov),4,0.3192834562697576
+Learning path (Markov),5,0.34193888303477343
+Learning path (Markov),6,0.36143308746048475
+Learning path (Markov),7,0.3746048472075869
+Learning path (Markov),8,0.3917281348788198
+Learning path (Markov),9,0.40516332982086406
+Learning path (Markov),10,0.42360379346680715
+Learning path (Markov),11,0.43537056550755177
+Learning path (Markov),12,0.44819107832806465
+Learning path (Markov),13,0.45732349841938885
+Learning path (Markov),14,0.4636459430979979
+Learning path (Markov),15,0.46944151738672285
+Learning path (Markov),16,0.4810326659641728
+Learning path (Markov),17,0.48840885142255
+Learning path (Markov),18,0.49499473129610116
+Learning path (Markov),19,0.5047418335089568
+Learning path (Markov),20,0.5122233930453108
+Learning path (Markov),21,0.5175974710221285
+Learning path (Markov),22,0.5277133825079031
+Learning path (Markov),23,0.5312434141201264
+Learning path (Markov),24,0.5408324552160169
+Learning path (Markov),25,0.5468914646996839
+Learning path (Markov),26,0.553213909378293
+Learning path (Markov),27,0.5584826132771338
+Learning path (Markov),28,0.5616438356164384
+Learning path (Markov),29,0.5679662802950474
+Learning path (Markov),30,0.5725763962065332
+Learning path (Markov),31,0.577186512118019
+Learning path (Markov),32,0.5823234984193888
+Learning path (Markov),33,0.5869336143308747
+Learning path (Markov),34,0.5906217070600632
+Learning path (Markov),35,0.5958904109589042
+Learning path (Markov),36,0.601159114857745
+Learning path (Markov),37,0.6032665964172813
+Learning path (Markov),38,0.609237794169301
+Learning path (Markov),39,0.6115208991921322
+Learning path (Markov),40,0.6140674394099052
+Learning path (Markov),41,0.619072708113804
+Learning path (Markov),42,0.6217070600632244
+Learning path (Markov),43,0.6230242360379347
+Learning path (Markov),44,0.6264488935721813
+Learning path (Markov),45,0.6288198103266597
+Learning path (Markov),46,0.6330347734457323
+Learning path (Markov),47,0.6363716192483315
+Learning path (Markov),48,0.6388303477344573
+Learning path (Markov),49,0.6404987706357569
+Learning path (Markov),50,0.643940990516333
+ALS matrix factorisation,1,0.1417281348788198
+ALS matrix factorisation,2,0.20626975763962066
+ALS matrix factorisation,3,0.2465753424657534
+ALS matrix factorisation,4,0.2792413066385669
+ALS matrix factorisation,5,0.30242360379346683
+ALS matrix factorisation,6,0.3184931506849315
+ALS matrix factorisation,7,0.34088514225500527
+ALS matrix factorisation,8,0.35985247629083245
+ALS matrix factorisation,9,0.3738145416227608
+ALS matrix factorisation,10,0.38777660695468913
+ALS matrix factorisation,11,0.39673340358271864
+ALS matrix factorisation,12,0.4105374077976818
+ALS matrix factorisation,13,0.4185458377239199
+ALS matrix factorisation,14,0.4307692307692308
+ALS matrix factorisation,15,0.4420047418335089
+ALS matrix factorisation,16,0.45403055848261326
+ALS matrix factorisation,17,0.4601554267650158
+ALS matrix factorisation,18,0.4707586933614331
+ALS matrix factorisation,19,0.47872760800842995
+ALS matrix factorisation,20,0.48472075869336145
+ALS matrix factorisation,21,0.49124077976817704
+ALS matrix factorisation,22,0.4982876712328767
+ALS matrix factorisation,23,0.5032665964172813
+ALS matrix factorisation,24,0.5118018967334036
+ALS matrix factorisation,25,0.5166491043203372
+ALS matrix factorisation,26,0.5225500526870389
+ALS matrix factorisation,27,0.5302072356866878
+ALS matrix factorisation,28,0.5361784334387074
+ALS matrix factorisation,29,0.5395152792413066
+ALS matrix factorisation,30,0.5426765015806112
+ALS matrix factorisation,31,0.5496311907270811
+ALS matrix factorisation,32,0.5523709167544785
+ALS matrix factorisation,33,0.5551106427818756
+ALS matrix factorisation,34,0.5618458025992272
+ALS matrix factorisation,35,0.5691078328064628
+ALS matrix factorisation,36,0.5741570073761855
+ALS matrix factorisation,37,0.5774499473129611
+ALS matrix factorisation,38,0.58377239199157
+ALS matrix factorisation,39,0.5864067439409906
+ALS matrix factorisation,40,0.5885142255005269
+ALS matrix factorisation,41,0.5911485774499473
+ALS matrix factorisation,42,0.5927291886195996
+ALS matrix factorisation,43,0.5974710221285564
+ALS matrix factorisation,44,0.6002370916754478
+ALS matrix factorisation,45,0.6045837723919916
+ALS matrix factorisation,46,0.6078767123287672
+ALS matrix factorisation,47,0.6106427818756586
+ALS matrix factorisation,48,0.6122233930453108
+ALS matrix factorisation,49,0.6164383561643836
+ALS matrix factorisation,50,0.6185458377239199
+Pathway hybrid (adaptive),1,0.20442571127502634
+Pathway hybrid (adaptive),2,0.2665964172813488
+Pathway hybrid (adaptive),3,0.30453108535300316
+Pathway hybrid (adaptive),4,0.3356164383561644
+Pathway hybrid (adaptive),5,0.3635405690200211
+Pathway hybrid (adaptive),6,0.3767123287671233
+Pathway hybrid (adaptive),7,0.3940990516332982
+Pathway hybrid (adaptive),8,0.4088514225500527
+Pathway hybrid (adaptive),9,0.4267650158061117
+Pathway hybrid (adaptive),10,0.440463645943098
+Pathway hybrid (adaptive),11,0.4546891464699684
+Pathway hybrid (adaptive),12,0.464172813487882
+Pathway hybrid (adaptive),13,0.4726027397260274
+Pathway hybrid (adaptive),14,0.47997892518440466
+Pathway hybrid (adaptive),15,0.48735511064278186
+Pathway hybrid (adaptive),16,0.49683877766069545
+Pathway hybrid (adaptive),17,0.5036880927291886
+Pathway hybrid (adaptive),18,0.5110642781875658
+Pathway hybrid (adaptive),19,0.523709167544784
+Pathway hybrid (adaptive),20,0.5289778714436248
+Pathway hybrid (adaptive),21,0.5353003161222339
+Pathway hybrid (adaptive),22,0.541095890410959
+Pathway hybrid (adaptive),23,0.547945205479452
+Pathway hybrid (adaptive),24,0.5511064278187566
+Pathway hybrid (adaptive),25,0.5579557428872497
+Pathway hybrid (adaptive),26,0.565331928345627
+Pathway hybrid (adaptive),27,0.5706006322444679
+Pathway hybrid (adaptive),28,0.5748155953635405
+Pathway hybrid (adaptive),29,0.5795574288724974
+Pathway hybrid (adaptive),30,0.5842992623814541
+Pathway hybrid (adaptive),31,0.5869336143308747
+Pathway hybrid (adaptive),32,0.5927291886195996
+Pathway hybrid (adaptive),33,0.5985247629083246
+Pathway hybrid (adaptive),34,0.6048472075869337
+Pathway hybrid (adaptive),35,0.6080084299262382
+Pathway hybrid (adaptive),36,0.6143308746048473
+Pathway hybrid (adaptive),37,0.6164383561643836
+Pathway hybrid (adaptive),38,0.619072708113804
+Pathway hybrid (adaptive),39,0.6222339304531085
+Pathway hybrid (adaptive),40,0.6238145416227608
+Pathway hybrid (adaptive),41,0.6269757639620653
+Pathway hybrid (adaptive),42,0.6280295047418335
+Pathway hybrid (adaptive),43,0.631190727081138
+Pathway hybrid (adaptive),44,0.6338250790305585
+Pathway hybrid (adaptive),45,0.636986301369863
+Pathway hybrid (adaptive),46,0.6396206533192834
+Pathway hybrid (adaptive),47,0.6406743940990516
+Pathway hybrid (adaptive),48,0.642781875658588
+Pathway hybrid (adaptive),49,0.6459430979978925
+Pathway hybrid (adaptive),50,0.6475237091675448
+Hybrid (one global weight mix),1,0.2054794520547945
+Hybrid (one global weight mix),2,0.26817702845100105
+Hybrid (one global weight mix),3,0.3071654373024236
+Hybrid (one global weight mix),4,0.3377239199157007
+Hybrid (one global weight mix),5,0.3635405690200211
+Hybrid (one global weight mix),6,0.3793466807165437
+Hybrid (one global weight mix),7,0.3925184404636459
+Hybrid (one global weight mix),8,0.4077976817702845
+Hybrid (one global weight mix),9,0.42413066385669124
+Hybrid (one global weight mix),10,0.4357218124341412
+Hybrid (one global weight mix),11,0.44678609062170704
+Hybrid (one global weight mix),12,0.46048472075869334
+Hybrid (one global weight mix),13,0.4678609062170706
+Hybrid (one global weight mix),14,0.47629083245521603
+Hybrid (one global weight mix),15,0.4863013698630137
+Hybrid (one global weight mix),16,0.4931506849315068
+Hybrid (one global weight mix),17,0.5047418335089568
+Hybrid (one global weight mix),18,0.5126448893572181
+Hybrid (one global weight mix),19,0.5200210748155953
+Hybrid (one global weight mix),20,0.5316122233930453
+Hybrid (one global weight mix),21,0.5384615384615384
+Hybrid (one global weight mix),22,0.5432033719704953
+Hybrid (one global weight mix),23,0.547945205479452
+Hybrid (one global weight mix),24,0.5553213909378293
+Hybrid (one global weight mix),25,0.5584826132771338
+Hybrid (one global weight mix),26,0.5626975763962065
+Hybrid (one global weight mix),27,0.5674394099051633
+Hybrid (one global weight mix),28,0.5727081138040042
+Hybrid (one global weight mix),29,0.5774499473129611
+Hybrid (one global weight mix),30,0.5821917808219178
+Hybrid (one global weight mix),31,0.5864067439409906
+Hybrid (one global weight mix),32,0.5911485774499473
+Hybrid (one global weight mix),33,0.5958904109589042
+Hybrid (one global weight mix),34,0.6006322444678609
+Hybrid (one global weight mix),35,0.6027397260273972
+Hybrid (one global weight mix),36,0.60695468914647
+Hybrid (one global weight mix),37,0.6106427818756586
+Hybrid (one global weight mix),38,0.6143308746048473
+Hybrid (one global weight mix),39,0.6148577449947313
+Hybrid (one global weight mix),40,0.6164383561643836
+Hybrid (one global weight mix),41,0.6206533192834562
+Hybrid (one global weight mix),42,0.6232876712328768
+Hybrid (one global weight mix),43,0.6290832455216017
+Hybrid (one global weight mix),44,0.6317175974710221
+Hybrid (one global weight mix),45,0.6364594309799789
+Hybrid (one global weight mix),46,0.6401475237091675
+Hybrid (one global weight mix),47,0.6417281348788199
+Hybrid (one global weight mix),48,0.6448893572181243
+Hybrid (one global weight mix),49,0.649104320337197
+Hybrid (one global weight mix),50,0.6527924130663857
+Hybrid (equal weights),1,0.21390937829293993
+Hybrid (equal weights),2,0.26817702845100105
+Hybrid (equal weights),3,0.3087460484720759
+Hybrid (equal weights),4,0.3329820864067439
+Hybrid (equal weights),5,0.3587987355110643
+Hybrid (equal weights),6,0.3793466807165437
+Hybrid (equal weights),7,0.3946259220231823
+Hybrid (equal weights),8,0.4088514225500527
+Hybrid (equal weights),9,0.42096944151738674
+Hybrid (equal weights),10,0.4336143308746048
+Hybrid (equal weights),11,0.44204425711275025
+Hybrid (equal weights),12,0.4499473129610116
+Hybrid (equal weights),13,0.45732349841938885
+Hybrid (equal weights),14,0.47154899894625923
+Hybrid (equal weights),15,0.47997892518440466
+Hybrid (equal weights),16,0.48840885142255
+Hybrid (equal weights),17,0.49894625922023184
+Hybrid (equal weights),18,0.5084299262381454
+Hybrid (equal weights),19,0.5158061116965227
+Hybrid (equal weights),20,0.5221285563751317
+Hybrid (equal weights),21,0.5284510010537408
+Hybrid (equal weights),22,0.535827186512118
+Hybrid (equal weights),23,0.5389884088514225
+Hybrid (equal weights),24,0.5426765015806112
+Hybrid (equal weights),25,0.5474183350895679
+Hybrid (equal weights),26,0.5505795574288725
+Hybrid (equal weights),27,0.5579557428872497
+Hybrid (equal weights),28,0.5626975763962065
+Hybrid (equal weights),29,0.5669125395152792
+Hybrid (equal weights),30,0.5727081138040042
+Hybrid (equal weights),31,0.5769230769230769
+Hybrid (equal weights),32,0.5806111696522656
+Hybrid (equal weights),33,0.58377239199157
+Hybrid (equal weights),34,0.5885142255005269
+Hybrid (equal weights),35,0.5922023182297155
+Hybrid (equal weights),36,0.5948366701791359
+Hybrid (equal weights),37,0.6001053740779768
+Hybrid (equal weights),38,0.6016859852476291
+Hybrid (equal weights),39,0.6037934668071654
+Hybrid (equal weights),40,0.6080084299262382
+Hybrid (equal weights),41,0.6116965226554267
+Hybrid (equal weights),42,0.6159114857744995
+Hybrid (equal weights),43,0.6185458377239199
+Hybrid (equal weights),44,0.6206533192834562
+Hybrid (equal weights),45,0.6227608008429927
+Hybrid (equal weights),46,0.6264488935721813
+Hybrid (equal weights),47,0.631190727081138
+Hybrid (equal weights),48,0.6338250790305585
+Hybrid (equal weights),49,0.6354056902002108
+Hybrid (equal weights),50,0.6375131717597471
+Hybrid without pathway,1,0.17070600632244468
+Hybrid without pathway,2,0.23076923076923078
+Hybrid without pathway,3,0.2718651211801897
+Hybrid without pathway,4,0.3018967334035827
+Hybrid without pathway,5,0.3308746048472076
+Hybrid without pathway,6,0.35247629083245524
+Hybrid without pathway,7,0.36880927291886195
+Hybrid without pathway,8,0.3840885142255005
+Hybrid without pathway,9,0.39673340358271864
+Hybrid without pathway,10,0.40569020021074814
+Hybrid without pathway,11,0.4204425711275026
+Hybrid without pathway,12,0.4320337197049526
+Hybrid without pathway,13,0.43940990516332984
+Hybrid without pathway,14,0.4499473129610116
+Hybrid without pathway,15,0.4610115911485774
+Hybrid without pathway,16,0.4720758693361433
+Hybrid without pathway,17,0.47997892518440466
+Hybrid without pathway,18,0.4863013698630137
+Hybrid without pathway,19,0.49262381454162274
+Hybrid without pathway,20,0.5005268703898841
+Hybrid without pathway,21,0.5073761854583773
+Hybrid without pathway,22,0.5126448893572181
+Hybrid without pathway,23,0.5163329820864068
+Hybrid without pathway,24,0.5210748155953635
+Hybrid without pathway,25,0.5279241306638567
+Hybrid without pathway,26,0.5321390937829295
+Hybrid without pathway,27,0.535827186512118
+Hybrid without pathway,28,0.541095890410959
+Hybrid without pathway,29,0.5468914646996839
+Hybrid without pathway,30,0.5505795574288725
+Hybrid without pathway,31,0.5553213909378293
+Hybrid without pathway,32,0.5600632244467861
+Hybrid without pathway,33,0.5626975763962065
+Hybrid without pathway,34,0.565858798735511
+Hybrid without pathway,35,0.571127502634352
+Hybrid without pathway,36,0.5721812434141201
+Hybrid without pathway,37,0.5742887249736565
+Hybrid without pathway,38,0.5785036880927292
+Hybrid without pathway,39,0.5827186512118019
+Hybrid without pathway,40,0.5874604847207587
+Hybrid without pathway,41,0.5895679662802951
+Hybrid without pathway,42,0.5948366701791359
+Hybrid without pathway,43,0.5985247629083246
+Hybrid without pathway,44,0.6032665964172813
+Hybrid without pathway,45,0.6053740779768177
+Hybrid without pathway,46,0.6111696522655427
+Hybrid without pathway,47,0.6122233930453108
+Hybrid without pathway,48,0.6153846153846154
+Hybrid without pathway,49,0.619072708113804
+Hybrid without pathway,50,0.6227608008429927
+Hybrid without content,1,0.2016596417281349
+Hybrid without content,2,0.2638215665612926
+Hybrid without content,3,0.30951879171057256
+Hybrid without content,4,0.33532665964172814
+Hybrid without content,5,0.3596856340007025
+Hybrid without content,6,0.3769318580962417
+Hybrid without content,7,0.3890937829293994
+Hybrid without content,8,0.4041095890410959
+Hybrid without content,9,0.4183350895679663
+Hybrid without content,10,0.4320337197049526
+Hybrid without content,11,0.4409905163329821
+Hybrid without content,12,0.4533719704952582
+Hybrid without content,13,0.4660168598524763
+Hybrid without content,14,0.4760551272807942
+Hybrid without content,15,0.4813515612001553
+Hybrid without content,16,0.48770173589928456
+Hybrid without content,17,0.4937884754034718
+Hybrid without content,18,0.5017192612722534
+Hybrid without content,19,0.510176917530919
+Hybrid without content,20,0.5155962878745863
+Hybrid without content,21,0.5215425286081378
+Hybrid without content,22,0.525381287782153
+Hybrid without content,23,0.5353668681714825
+Hybrid without content,24,0.5403781722327886
+Hybrid without content,25,0.5451787281381412
+Hybrid without content,26,0.5505061544333778
+Hybrid without content,27,0.5547798399488463
+Hybrid without content,28,0.5583685939574655
+Hybrid without content,29,0.5616939127711424
+Hybrid without content,30,0.566863277949414
+Hybrid without content,31,0.5701885967630911
+Hybrid without content,32,0.572460174797
+Hybrid without content,33,0.57565238951218
+Hybrid without content,34,0.57884460422736
+Hybrid without content,35,0.5828271245273663
+Hybrid without content,36,0.5875999504121986
+Hybrid without content,37,0.5889481187627843
+Hybrid without content,38,0.5921680634984846
+Hybrid without content,39,0.5967051842088952
+Hybrid without content,40,0.5996616937496534
+Hybrid without content,41,0.6041678220841884
+Hybrid without content,42,0.607093339249071
+Hybrid without content,43,0.6102822916088958
+Hybrid without content,44,0.613119997042131
+Hybrid without content,45,0.6167480080601927
+Hybrid without content,46,0.6208150777364908
+Hybrid without content,47,0.6249699591444365
+Hybrid without content,48,0.6285101584308506
+Hybrid without content,49,0.6308209934742018
+Hybrid without content,50,0.6321834618157617
+Hybrid without collaborative,1,0.19968387776606955
+Hybrid without collaborative,2,0.2623814541622761
+Hybrid without collaborative,3,0.30453108535300316
+Hybrid without collaborative,4,0.3261327713382508
+Hybrid without collaborative,5,0.35036880927291886
+Hybrid without collaborative,6,0.36195995785036883
+Hybrid without collaborative,7,0.3835616438356164
+Hybrid without collaborative,8,0.4067439409905163
+Hybrid without collaborative,9,0.4183350895679663
+Hybrid without collaborative,10,0.4320337197049526
+Hybrid without collaborative,11,0.44257112750263433
+Hybrid without collaborative,12,0.45100105374077976
+Hybrid without collaborative,13,0.45995785036880926
+Hybrid without collaborative,14,0.4673340358271865
+Hybrid without collaborative,15,0.4778714436248683
+Hybrid without collaborative,16,0.48472075869336145
+Hybrid without collaborative,17,0.49209694415173866
+Hybrid without collaborative,18,0.49894625922023184
+Hybrid without collaborative,19,0.5063224446786091
+Hybrid without collaborative,20,0.5131717597471022
+Hybrid without collaborative,21,0.5210748155953635
+Hybrid without collaborative,22,0.5252897787144363
+Hybrid without collaborative,23,0.5305584826132771
+Hybrid without collaborative,24,0.5347734457323499
+Hybrid without collaborative,25,0.5437302423603794
+Hybrid without collaborative,26,0.5521601685985248
+Hybrid without collaborative,27,0.5569020021074815
+Hybrid without collaborative,28,0.5626975763962065
+Hybrid without collaborative,29,0.565858798735511
+Hybrid without collaborative,30,0.5737618545837724
+Hybrid without collaborative,31,0.5769230769230769
+Hybrid without collaborative,32,0.5800842992623815
+Hybrid without collaborative,33,0.5848261327713382
+Hybrid without collaborative,34,0.5879873551106428
+Hybrid without collaborative,35,0.5922023182297155
+Hybrid without collaborative,36,0.5964172813487882
+Hybrid without collaborative,37,0.6001053740779768
+Hybrid without collaborative,38,0.6037934668071654
+Hybrid without collaborative,39,0.60695468914647
+Hybrid without collaborative,40,0.6116965226554267
+Hybrid without collaborative,41,0.613277133825079
+Hybrid without collaborative,42,0.6164383561643836
+Hybrid without collaborative,43,0.619072708113804
+Hybrid without collaborative,44,0.6222339304531085
+Hybrid without collaborative,45,0.6243414120126449
+Hybrid without collaborative,46,0.6285563751317176
+Hybrid without collaborative,47,0.6317175974710221
+Hybrid without collaborative,48,0.6359325605900948
+Hybrid without collaborative,49,0.636986301369863
+Hybrid without collaborative,50,0.6380400421496312
+Hybrid without recency weighting,1,0.17544783983140147
+Hybrid without recency weighting,2,0.23656480505795574
+Hybrid without recency weighting,3,0.2792413066385669
+Hybrid without recency weighting,4,0.3076923076923077
+Hybrid without recency weighting,5,0.3398314014752371
+Hybrid without recency weighting,6,0.3577449947312961
+Hybrid without recency weighting,7,0.3761854583772392
+Hybrid without recency weighting,8,0.38935721812434143
+Hybrid without recency weighting,9,0.4041095890410959
+Hybrid without recency weighting,10,0.4183350895679663
+Hybrid without recency weighting,11,0.42887249736564803
+Hybrid without recency weighting,12,0.4367755532139094
+Hybrid without recency weighting,13,0.4430979978925184
+Hybrid without recency weighting,14,0.45152792413066384
+Hybrid without recency weighting,15,0.46153846153846156
+Hybrid without recency weighting,16,0.4720758693361433
+Hybrid without recency weighting,17,0.47997892518440466
+Hybrid without recency weighting,18,0.48946259220231825
+Hybrid without recency weighting,19,0.5010537407797682
+Hybrid without recency weighting,20,0.5100105374077977
+Hybrid without recency weighting,21,0.5163329820864068
+Hybrid without recency weighting,22,0.5194942044257113
+Hybrid without recency weighting,23,0.5226554267650158
+Hybrid without recency weighting,24,0.5273972602739726
+Hybrid without recency weighting,25,0.5337197049525817
+Hybrid without recency weighting,26,0.541622760800843
+Hybrid without recency weighting,27,0.5468914646996839
+Hybrid without recency weighting,28,0.5542676501580611
+Hybrid without recency weighting,29,0.5600632244467861
+Hybrid without recency weighting,30,0.565331928345627
+Hybrid without recency weighting,31,0.5674394099051633
+Hybrid without recency weighting,32,0.5732349841938883
+Hybrid without recency weighting,33,0.5785036880927292
+Hybrid without recency weighting,34,0.5853530031612223
+Hybrid without recency weighting,35,0.5916754478398314
+Hybrid without recency weighting,36,0.5979978925184405
+Hybrid without recency weighting,37,0.6022128556375131
+Hybrid without recency weighting,38,0.6064278187565859
+Hybrid without recency weighting,39,0.6095890410958904
+Hybrid without recency weighting,40,0.6127502634351949
+Hybrid without recency weighting,41,0.6169652265542677
+Hybrid without recency weighting,42,0.619072708113804
+Hybrid without recency weighting,43,0.6206533192834562
+Hybrid without recency weighting,44,0.6232876712328768
+Hybrid without recency weighting,45,0.6306638566912539
+Hybrid without recency weighting,46,0.6343519494204426
+Hybrid without recency weighting,47,0.6348788198103267
+Hybrid without recency weighting,48,0.6385669125395153
+Hybrid without recency weighting,49,0.642781875658588
+Hybrid without recency weighting,50,0.6438356164383562
+Hybrid with prototype scaling,1,0.2054794520547945
+Hybrid with prototype scaling,2,0.2665964172813488
+Hybrid with prototype scaling,3,0.3076923076923077
+Hybrid with prototype scaling,4,0.3398314014752371
+Hybrid with prototype scaling,5,0.3656480505795574
+Hybrid with prototype scaling,6,0.3804004214963119
+Hybrid with prototype scaling,7,0.39199157007376184
+Hybrid with prototype scaling,8,0.4125395152792413
+Hybrid with prototype scaling,9,0.42992623814541625
+Hybrid with prototype scaling,10,0.4430979978925184
+Hybrid with prototype scaling,11,0.45521601685985247
+Hybrid with prototype scaling,12,0.4636459430979979
+Hybrid with prototype scaling,13,0.4731296101159115
+Hybrid with prototype scaling,14,0.48472075869336145
+Hybrid with prototype scaling,15,0.49262381454162274
+Hybrid with prototype scaling,16,0.49894625922023184
+Hybrid with prototype scaling,17,0.5052687038988409
+Hybrid with prototype scaling,18,0.5110642781875658
+Hybrid with prototype scaling,19,0.5205479452054794
+Hybrid with prototype scaling,20,0.5258166491043204
+Hybrid with prototype scaling,21,0.530031612223393
+Hybrid with prototype scaling,22,0.5379346680716544
+Hybrid with prototype scaling,23,0.5442571127502634
+Hybrid with prototype scaling,24,0.5468914646996839
+Hybrid with prototype scaling,25,0.5526870389884089
+Hybrid with prototype scaling,26,0.5579557428872497
+Hybrid with prototype scaling,27,0.5648050579557429
+Hybrid with prototype scaling,28,0.5695468914646997
+Hybrid with prototype scaling,29,0.5748155953635405
+Hybrid with prototype scaling,30,0.583245521601686
+Hybrid with prototype scaling,31,0.5864067439409906
+Hybrid with prototype scaling,32,0.5906217070600632
+Hybrid with prototype scaling,33,0.5958904109589042
+Hybrid with prototype scaling,34,0.601159114857745
+Hybrid with prototype scaling,35,0.6043203371970495
+Hybrid with prototype scaling,36,0.6101159114857745
+Hybrid with prototype scaling,37,0.6148577449947313
+Hybrid with prototype scaling,38,0.6169652265542677
+Hybrid with prototype scaling,39,0.6195995785036881
+Hybrid with prototype scaling,40,0.6227608008429927
+Hybrid with prototype scaling,41,0.6269757639620653
+Hybrid with prototype scaling,42,0.6280295047418335
+Hybrid with prototype scaling,43,0.6306638566912539
+Hybrid with prototype scaling,44,0.6338250790305585
+Hybrid with prototype scaling,45,0.6364594309799789
+Hybrid with prototype scaling,46,0.6401475237091675
+Hybrid with prototype scaling,47,0.6412012644889358
+Hybrid with prototype scaling,48,0.6443624868282403
+Hybrid with prototype scaling,49,0.6464699683877766
+Hybrid with prototype scaling,50,0.6475237091675448

@@ -1,0 +1,17 @@
+method,hr@10,ndcg@10,cases
+ALS matrix factorisation,0.0,0.0,12
+Content (TF-IDF),0.3333333333333333,0.10883628274092212,12
+Hybrid (equal weights),0.0,0.0,12
+Hybrid (one global weight mix),0.0,0.0,12
+Hybrid with prototype scaling,0.08333333333333333,0.029683932259001847,12
+Hybrid without collaborative,0.16666666666666666,0.04817747105298131,12
+Hybrid without content,0.0,0.0,12
+Hybrid without pathway,0.0,0.0,12
+Hybrid without recency weighting,0.0,0.0,12
+Item-kNN CF,0.0,0.0,12
+Item-kNN CF (no recency),0.0,0.0,12
+Learning path (Markov),0.0,0.0,12
+Pathway hybrid (adaptive),0.0,0.0,12
+Popularity,0.0,0.0,12
+Prototype hybrid (June),0.0,0.0,12
+Random,0.0,0.0,12
