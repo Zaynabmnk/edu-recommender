@@ -20,8 +20,8 @@ LABELS = {
     "Hybrid (one global weight mix)": "Pathway hybrid, one weight mix",
     "Hybrid (equal weights)": "Pathway hybrid, equal weights",
     "Learning path (Markov)": "Learning path only (Markov)",
-    "Item-kNN CF": "Item-kNN collaborative filtering",
-    "Item-kNN CF (no recency)": "Item-kNN, whole history weighted equally",
+    "Item-kNN CF": "Item kNN collaborative filtering",
+    "Item-kNN CF (no recency)": "Item kNN, whole history weighted equally",
     "Prototype hybrid (June)": "June prototype (CF + content)",
     "ALS matrix factorisation": "ALS matrix factorisation",
     "Content (TF-IDF)": "Content only (TF-IDF)",
@@ -58,7 +58,7 @@ def results_bars(summary):
     for yi, value, high in zip(y, values, rows["hr@10_ci_high"]):
         ax.text(high + 0.008, yi, f"{value:.3f}", va="center", fontsize=8, color=plotstyle.INK_SECONDARY)
     ax.set_yticks(y, [LABELS[m] for m in rows.index])
-    ax.set_xlabel("HR@10 on held-out learners (bars) with 95% bootstrap interval")
+    ax.set_xlabel("HR@10 on held out learners (bars) with 95% bootstrap interval")
     ax.set_xlim(0, max(rows["hr@10_ci_high"]) + 0.08)
     ax.grid(axis="y", visible=False)
     ax.set_title("Share of learners whose real next video was in the top 10")
@@ -149,12 +149,15 @@ def coldstart_chart(coldstart):
                 fmt="none", ecolor=plotstyle.INK_SECONDARY, elinewidth=0.9, capsize=2.5)
     for yi, value, high in zip(y, values, rows["hr_ci_high"]):
         ax.text(high + 0.006, yi, f"{value:.3f}", va="center", fontsize=8, color=plotstyle.INK_SECONDARY)
-    labels = [f"{s} ({n} learners)" if n != rows["cases"].max() else s for s, n in zip(rows["strategy"], rows["cases"])]
+    shown = {"All-time popularity (uses future data)": "All time popularity (uses future data)",
+             "Same-job popularity": "Same job popularity"}
+    names = [shown.get(s, s) for s in rows["strategy"]]
+    labels = [f"{s} ({n} learners)" if n != rows["cases"].max() else s for s, n in zip(names, rows["cases"])]
     ax.set_yticks(y, labels)
     ax.set_xlim(0, rows["hr_ci_high"].max() + 0.07)
     ax.set_xlabel("HR@10 for each learner's first video, using only earlier activity")
     ax.grid(axis="y", visible=False)
-    ax.set_title("Brand-new learners")
+    ax.set_title("Brand new learners")
     plotstyle.save(fig, FIGURES_DIR / "fig_coldstart")
 
 

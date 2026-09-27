@@ -455,48 +455,48 @@ L 440.802031 197.898625
    </g>
    <g id="legend_1">
     <g id="patch_21">
-     <path d="M 62.827852 247.227256 
-L 79.827852 247.227256 
-L 79.827852 241.277256 
-L 62.827852 241.277256 
+     <path d="M 63.062266 247.227256 
+L 80.062266 247.227256 
+L 80.062266 241.277256 
+L 63.062266 241.277256 
 z
 " style="fill: #2a78d6"/>
     </g>
     <g id="text_13">
-     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="86.627852" y="247.227256" transform="rotate(-0 86.627852 247.227256)">Final model: pathway hybrid, adaptive weights</text>
+     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="86.862266" y="247.227256" transform="rotate(-0 86.862266 247.227256)">Final model: pathway hybrid, adaptive weights</text>
     </g>
     <g id="patch_22">
-     <path d="M 62.827852 259.621319 
-L 79.827852 259.621319 
-L 79.827852 253.671319 
-L 62.827852 253.671319 
+     <path d="M 63.062266 259.621319 
+L 80.062266 259.621319 
+L 80.062266 253.671319 
+L 63.062266 253.671319 
 z
 " style="fill: #eb6834"/>
     </g>
     <g id="text_14">
-     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="86.627852" y="259.621319" transform="rotate(-0 86.627852 259.621319)">June prototype (CF + content)</text>
+     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="86.862266" y="259.621319" transform="rotate(-0 86.862266 259.621319)">June prototype (CF + content)</text>
     </g>
     <g id="patch_23">
-     <path d="M 277.488711 247.227256 
-L 294.488711 247.227256 
-L 294.488711 241.277256 
-L 277.488711 241.277256 
+     <path d="M 277.723125 247.227256 
+L 294.723125 247.227256 
+L 294.723125 241.277256 
+L 277.723125 241.277256 
 z
 " style="fill: #1baf7a"/>
     </g>
     <g id="text_15">
-     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="301.288711" y="247.227256" transform="rotate(-0 301.288711 247.227256)">Learning path only (Markov)</text>
+     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="301.523125" y="247.227256" transform="rotate(-0 301.523125 247.227256)">Learning path only (Markov)</text>
     </g>
     <g id="patch_24">
-     <path d="M 277.488711 259.541631 
-L 294.488711 259.541631 
-L 294.488711 253.591631 
-L 277.488711 253.591631 
+     <path d="M 277.723125 259.541631 
+L 294.723125 259.541631 
+L 294.723125 253.591631 
+L 277.723125 253.591631 
 z
 " style="fill: #eda100"/>
     </g>
     <g id="text_16">
-     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="301.288711" y="259.541631" transform="rotate(-0 301.288711 259.541631)">Item-kNN collaborative filtering</text>
+     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="301.523125" y="259.541631" transform="rotate(-0 301.523125 259.541631)">Item kNN collaborative filtering</text>
     </g>
    </g>
   </g>

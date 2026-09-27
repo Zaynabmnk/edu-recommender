@@ -654,7 +654,7 @@ L 252.491172 173.129641
 " style="fill: none; stroke: #eda100; stroke-width: 2; stroke-linecap: round"/>
     </g>
     <g id="text_20">
-     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="259.291172" y="176.104641" transform="rotate(-0 259.291172 176.104641)">Item-kNN collaborative filtering</text>
+     <text style="font-size: 8.5px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: start" x="259.291172" y="176.104641" transform="rotate(-0 259.291172 176.104641)">Item kNN collaborative filtering</text>
     </g>
     <g id="line2d_41">
      <path d="M 235.491172 185.357688 

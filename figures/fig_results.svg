@@ -133,7 +133,7 @@ L 568.501773 20.56875
      </g>
     </g>
     <g id="text_7">
-     <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="399.167969" y="297.675856" transform="rotate(-0 399.167969 297.675856)">HR@10 on held-out learners (bars) with 95% bootstrap interval</text>
+     <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="399.167969" y="297.675856" transform="rotate(-0 399.167969 297.675856)">HR@10 on held out learners (bars) with 95% bootstrap interval</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -179,7 +179,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_11">
-      <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="191.287969" y="192.660839" transform="rotate(-0 191.287969 192.660839)">Item-kNN, whole history weighted equally</text>
+      <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="191.287969" y="192.660839" transform="rotate(-0 191.287969 192.660839)">Item kNN, whole history weighted equally</text>
      </g>
     </g>
     <g id="ytick_5">
@@ -209,7 +209,7 @@ L -3.5 0
       </g>
      </g>
      <g id="text_14">
-      <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="191.287969" y="127.773152" transform="rotate(-0 191.287969 127.773152)">Item-kNN collaborative filtering</text>
+      <text style="font-size: 9px; font-family: 'Helvetica', 'Arial', 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="191.287969" y="127.773152" transform="rotate(-0 191.287969 127.773152)">Item kNN collaborative filtering</text>
      </g>
     </g>
     <g id="ytick_8">

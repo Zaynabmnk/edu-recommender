@@ -135,7 +135,7 @@ def draw(per_learner, item_use, gaps, watch, stats):
                 color=plotstyle.INK_SECONDARY, arrowprops=leader)
     ax.set_title("b. Activity is concentrated on few videos")
     ax.set_xlabel("% of videos (most used first)")
-    ax.set_ylabel("% of learner-video pairs")
+    ax.set_ylabel("% of learner and video pairs")
     ax.set_xlim(0, 100)
     ax.set_ylim(0, 100)
 
